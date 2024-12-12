@@ -18,6 +18,19 @@ Crate is a distributed SQL database management system that offers scalability, h
 
 In this project, we will use Docker to deploy Crate in a container, which simplifies the installation and management process.
 
+**Why Use Docker for Crade?**
+
+Deploying Crade using Docker offers several advantages:
+
+- **Ease of Deployment**: Docker simplifies the setup by packaging Crade and its dependencies into containers.
+- **Isolation**: Each service (web server, database, etc.) runs in its own container, reducing conflicts and ensuring a clean environment.
+- **Scalability**: Add resources or scale services independently without disrupting operations.
+- **Portability**: Run Crade on any system that supports Docker, making it highly portable across different environments.
+- **Efficiency**: Docker images are lightweight and allow for faster deployments compared to traditional virtual machines.
+- **Simplified Maintenance**: Manage updates and dependencies more effectively by simply replacing or updating individual containers.
+
+Docker empowers organizations to deploy Crade with minimal manual configuration, saving time and ensuring reliability.
+
 **Learning Objectives:**
 
 By the end of this tutorial, you will be able to:
@@ -59,6 +72,15 @@ Before proceeding with this tutorial, ensure that you have the following:
    - `--publish 4200:4200`: Maps port 4200 of the container to port 4200 on the host for the Crate admin UI.
    - `--publish 5432:5432`: Maps port 5432 of the container to port 5432 on the host for PostgreSQL compatibility.
    - `-Cdiscovery.type=single-node`: Configures Crate to run in single-node mode.
+
+
+
+
+
+https://github.com/user-attachments/assets/8cc6ac12-bfa1-40d7-9391-d21ce6467236
+
+
+
 
 
 **Conclusion:**
